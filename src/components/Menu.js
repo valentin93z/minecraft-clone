@@ -4,7 +4,7 @@ export const Menu = () => {
     const [saveWorld, resetWorld] = useStore((state) => [state.saveWorld, state.resetWorld]);
 
     return (
-        <div className="absolute menu">
+        <div className="absolute menu" onClick={(e) => e.stopPropagation()}>
             <button onClick={() => saveWorld()}>Save</button>
             <button onClick={() => resetWorld()}>Reset</button>
         </div>

@@ -23,7 +23,7 @@ function App() {
       </Canvas>
       <div className="absolute centered">+</div>
       <TextureSelector />
-      <Menu />
+      {/* <Menu /> */}
     </>
   );
 }
